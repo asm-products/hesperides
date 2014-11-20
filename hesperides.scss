@@ -1,0 +1,213 @@
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+
+//  Helpers
+
+$cinema: "(min-width: 1441px)";
+$desktop: "(max-width: 1024px)";
+$tablet: "(max-width: 768px)";
+$phone: "(max-width: 568px)";
+
+//  Reset
+
+* { box-sizing: border-box; }
+
+body,
+h1,
+h2,
+p { margin: 0; }
+
+h1,
+h2 { font-size: initial; }
+
+i { font-style: initial; }
+
+//  App
+
+html {
+	color: #444;
+	font: 14px/1.3 "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	letter-spacing: .01em;
+	-webkit-font-smoothing: antialiased;
+}
+
+//  Landing
+
+%center {
+	max-width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+%title-band {
+	max-width: 400px;
+	background: #bbb;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+%text-link {
+	color: inherit;
+
+	&:hover { color: #444; }
+}
+
+%icon {
+	display: inline-block;
+	font-family: FontAwesome;
+	position: relative;
+	vertical-align: middle;
+}
+
+.landing {
+	text-align: center;
+
+	&-head {
+		background: #eee;
+		padding: 40px 20px 20px;
+
+		&-center { @extend %center; }
+		&-actions {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			@media #{$tablet} {
+				padding: 10px;
+				position: initial;
+			}
+		}
+
+		&-title { font-size: 24px; }
+		&-subtitle {
+			color: #999;
+			font-size: 20px;
+			font-weight: 300;
+		}
+		&-login,
+		&-register {
+			color: #999;
+			display: inline-block;
+			font-size: 13px;
+			font-weight: bold;
+			line-height: 30px;
+			padding: 0 5px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+	&-hero {
+		background: url(http://upload.wikimedia.org/wikipedia/commons/9/98/Corn_field_ohio.jpg) center / cover;
+		padding: 30px;
+
+		&-center { @extend %center; }
+		&-group {
+			max-width: 720px;
+			background: rgba(255,255,255,.8);
+			border: 1px solid rgba(0,0,0,.2);
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0 auto 100px;
+			padding: 40px;
+		}
+
+		&-title {
+			@extend %title-band;
+			margin-bottom: 100px;
+		}
+		&-subtitle {
+			font-size: 24px;
+			letter-spacing: initial;
+			line-height: 1;
+			margin-bottom: 5px;
+		}
+		&-text-1 {}
+		&-text-2 {
+			color: #999;
+
+			&-link { @extend %text-link; }
+		}
+	}
+	&-how {
+		padding: 30px;
+
+		&-center { @extend %center; }
+		&-group {
+			width: 24%;
+			display: inline-block;
+			padding: 20px;
+			vertical-align: top;
+
+			@media #{$tablet} { width: 48%; }
+		}
+
+		&-title { @extend %title-band; }
+		&-subtitle {}
+		&-text {}
+
+		&-rocket,
+		&-bitcoin,
+		&-users,
+		&-bullhorn {
+			width: 100%;
+			display: block;
+			line-height: 120px;
+
+			&::before {
+				@extend %icon;
+				color: #999;
+				font-size: 80px;
+			}
+		}
+		&-rocket::before {
+			content: "\f135";
+			transform: rotate(-45deg);
+		}
+		&-bitcoin::before { content: "\f15a"; }
+		&-users::before { content: "\f0c0"; }
+		&-bullhorn::before {
+			content: "\f0a1";
+			transform: rotate(-45deg);
+		}
+
+	}
+	&-faq {
+		background: #eee;
+		padding: 100px 30px 30px;
+
+		&-center { @extend %center; }
+		&-group {
+			width: 30%;
+			display: inline-block;
+			padding: 40px;
+			text-align: left;
+			vertical-align: top;
+
+			@media #{$tablet} {
+				width: 100%;
+				padding: 20px;
+			}
+		}
+
+		&-title { @extend %title-band; }
+		&-question {
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 1.2;
+			margin-bottom: 20px;
+		}
+		&-answer {}
+		&-more {
+			&-band { text-align: right; }
+			&-link { @extend %text-link; }
+		}
+	}
+	&-foot {
+		background: #ddd;
+		padding: 40px;
+
+		&-center { @extend %center; }
+	}
+}
