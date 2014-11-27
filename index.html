@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hesperides</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.4.0/sass.js"></script>
+        <script src="//use.typekit.net/exf4iwe.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        <script>
+            $.get('hesperides.scss').done(function (sass) {
+                var css = Sass.compile(sass);
+                $('<style>').html(css).appendTo('head');
+            });
+        </script>
+    </head>
+    <body class="landing">
+<div class="landing-head" role="banner">
+    <div class="landing-head-center">
+        <h1 class="landing-head-title">Hesperides</h1>
+        <h2 class="landing-head-subtitle">Crowdfunded challenges for the benefit of humanity.</h2>
+        <div class="landing-head-actions">
+            <a class="landing-head-login" href="#">Login</a>
+            <a class="landing-head-register" href="#">Register</a>
+        </div>
+    </div>
+</div>
+<div class="landing-hero">
+    <div class="landing-hero-center">
+        <h1 class="landing-hero-title">Challenge #1</h1>
+        <div class="landing-hero-group">
+            <h2 class="landing-hero-subtitle">Can corn husks power cities?</h2>
+            <p class="landing-hero-text-1">Over 140 million tons of cornhusks are wasted each year.</p>
+            <p class="landing-hero-text-2">Currently funded with 4994 BTC ($209,652) by 12 funders. <a class="landing-hero-text-2-link" href="#">Learn more &rarr;</a></p>
+        </div>
+    </div>
+</div>
+<div class="landing-how">
+    <div class="landing-how-center">
+        <h1 class="landing-how-title">How Hesperides works</h1>
+        <div class="landing-how-group">
+            <i class="landing-how-rocket"></i>
+            <h2 class="landing-how-subtitle">Hesperides sets challenges</h2>
+            <p class="landing-how-text">Bitcoin removes friction and allows anyone, from anywhere in the world to participate at any time.</p>
+        </div>
+        <div class="landing-how-group">
+            <i class="landing-how-bitcoin"></i>
+            <h2 class="landing-how-subtitle">Challenges are funded</h2>
+            <p class="landing-how-text">Bitcoin removes friction and allows anyone, from anywhere in the world to participate at any time.</p>
+        </div>
+        <div class="landing-how-group">
+            <i class="landing-how-users"></i>
+            <h2 class="landing-how-subtitle">Judged by experts</h2>
+            <p class="landing-how-text">Bitcoin removes friction and allows anyone, from anywhere in the world to participate at any time.</p>
+        </div>
+        <div class="landing-how-group">
+            <i class="landing-how-bullhorn"></i>
+            <h2 class="landing-how-subtitle">Winning teams are rewarded</h2>
+            <p class="landing-how-text">Bitcoin removes friction and allows anyone, from anywhere in the world to participate at any time.</p>
+        </div>
+    </div>
+</div>
+<div class="landing-faq">
+    <div class="landing-faq-center">
+        <h1 class="landing-faq-title">Frequently asked questions</h1>
+        <div class="landing-faq-group">
+            <h2 class="landing-faq-question"><b>Q:</b> Is this an example question set in large type?</h2>
+            <p class="landing-faq-answer"><b>A:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris urna, commodo ac nisi quis, volutpat mollis ipsum. Sed varius consequat lobortis</p>
+        </div>
+        <div class="landing-faq-group">
+            <h2 class="landing-faq-question"><b>Q:</b> How does this work and why is this question so short?</h2>
+            <p class="landing-faq-answer"><b>A:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris urna, commodo ac nisi quis, volutpat mollis ipsum. Sed varius consequat lobortis</p>
+        </div>
+        <div class="landing-faq-group">
+            <h2 class="landing-faq-question"><b>Q:</b> Where do I put my bitcoins for this?</h2>
+            <p class="landing-faq-answer"><b>A:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mauris urna, commodo ac nisi quis, volutpat mollis ipsum. Sed varius consequat lobortis</p>
+        </div>
+        <p class="landing-faq-more-band"><a class="landing-faq-more-link" href="#">More &rarr;</a></p>
+    </div>
+</div>
+<div class="landing-foot">
+    <div class="landing-foot-center">Hesperides</div>
+</div>
+    </body>
+</html>
