@@ -11,7 +11,7 @@ Some ideas for potential goals:
 - Cures for orphan diseases
 - Vaccines
 
-
+We are using [CoPay](https://github.com/bitpay/copay/) as the multisig wallet
 
 ##Tech Stack
 
