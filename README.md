@@ -78,10 +78,6 @@ Check out [circle.yml](circle.yml) and [bin/deploy.sh](bin/deploy.sh) for detail
 
 # Server Environments
 
-### Hosting
-
-Acceptance and Production are hosted on Heroku under the _email@example.com_ account.
-
 ### Environment Variables
 
 Several common features and operational parameters can be set using environment variables.
