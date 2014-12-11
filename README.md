@@ -1,6 +1,8 @@
 Hesperides
 ==========
 
+<a href="https://assembly.com/hesperides/bounties"><img src="http://badger.asm.co/hesperides/badges/tasks.svg" height="24px" alt="Open Tasks" /></a>
+
 Hesperides is a platform that enables people to crowdfund incredibly ambitious goals.
 
 Each goal on the platform has an associated multi-signature bitcoin wallet, the signatures to which are distributed to some number of experts who hold the authority to deem the goal achieved. Anybody can transfer bitcoin to the wallet, but in order to unlock the wallet to disburse the funds, a supermajority of experts need to agree to that decision.
